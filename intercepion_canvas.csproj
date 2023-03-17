@@ -58,7 +58,7 @@
     <None Remove="FrontEnd\src\app\nav-menu\nav-menu.component.css" />
     <None Remove="FrontEnd\src\app\nav-menu\nav-menu.component.html" />
     <None Remove="FrontEnd\src\app\nav-menu\nav-menu.component.ts" />
-    <None Remove="FrontEnd\src\Entity\Figure.ts" />
+    <None Remove="FrontEnd\src\adapters\Figure.ts" />
     <None Remove="FrontEnd\src\services\interception.sevice.ts" />
     <None Remove="FrontEnd\src\services\store.service.ts" />
   </ItemGroup>
@@ -715,7 +715,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="FrontEnd\src\Entity\Figure.ts" />
+    <TypeScriptCompile Include="FrontEnd\src\adapters\Figure.ts" />
     <TypeScriptCompile Include="FrontEnd\src\services\store.service.ts" />
     <TypeScriptCompile Include="FrontEnd\src\services\interception.sevice.ts" />
   </ItemGroup>

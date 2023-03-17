@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IPoint } from '../Entity/Figure';
+import { IPoint } from '../adapters/Figure';
 
 @Injectable({
   providedIn: 'root'
