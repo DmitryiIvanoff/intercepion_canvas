@@ -24,8 +24,8 @@ export class InterceptionService {
         // Проверяем принадлежит ли точка пересечения в допустимых пределах:
         let pointOnAB = (Px - A.X) * (B.Y - A.Y) - (Py - A.Y) * (B.X - A.X) == 0
         let pointOnBC = (Px - C.X) * (D.Y - C.Y) - (Py - C.Y) * (D.X - C.X) == 0
-        if (
-          ((Math.min(C.X, D.X) <= Px) && (Math.max(D.X, C.X) >= Px) && (Math.min(A.X, B.X) <= Px) && (Math.max(B.X, A.X) >= Px)) &&
+        if (pointOnAB && pointOnBC &&
+          ((Math.min(C.X, D.X) <= Px) && (Math.max(D.X, C.X) >= Px) && (Math.min(A.X, B.X) <= Px) && (Math.max(B.X, A.X) >= Px)) ||
           ((Math.min(C.Y, D.Y) <= Py) && (Math.max(D.Y, C.Y) >= Py) && (Math.min(A.Y, B.Y) <= Py) && (Math.max(B.Y, A.Y) >= Py))
         ) {
           return true;
